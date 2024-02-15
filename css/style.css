@@ -29,15 +29,18 @@ body {
 
 .img-container{
   width: 70%;
-  height: 500px;
+  height: 600px;
   margin-right: auto;
   margin-left: auto;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 .img-container img{
   width: 100%;
   height: 100%;
   display: flex;
+  object-fit: cover;
+  object-position: 100% 8%;
 }
 .logo{
   background-image: url("../imagens/logo.png");
@@ -63,7 +66,6 @@ body {
 
 .sobre-wrapper{
   height: 1000px;
-  margin-top: 100px;
 }
 
 
@@ -73,7 +75,7 @@ body {
 
 
 .cb{
-  color: black;
+  color: #999;
 }
 
 .cb:hover{
@@ -196,12 +198,15 @@ padding-bottom: 80px;
 }
 
 .space-footer a{
-  color: black;
+  color: #999;
   text-decoration: none;
 }
 
+.space-footer span{
+  color: #999;
+}
 .space-footer span:hover{
-  color: #909090;
+  color: #CAA985;
    transition: 0.5s ease-in-out;
 }
 .main-space-footer{
@@ -221,6 +226,10 @@ padding-bottom: 80px;
 
 .sp-icon{
   margin-bottom: 5%;
+}
+
+.space-footer h5{
+  color: #CAA985;
 }
 
 .novo-2{
