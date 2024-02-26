@@ -54,7 +54,7 @@ body {
 }
 
 .title-img-main h1{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "Playfair Display", serif;
   font-size: 120px;
   margin-top: 100px;
   margin-left: 100px;
@@ -62,15 +62,14 @@ body {
 }
 
 .title-img-main h3{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "Playfair Display", serif;
   font-size: 60px;
-  /* margin-top: 100px; */
   margin-left: 145px;
   text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.34);
 }
 
 .title-img-main h5{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+font-family: "Montserrat", sans-serif;
   cursor: pointer;
   font-size: 20px;
   margin-top: 30px;
@@ -467,20 +466,6 @@ padding-bottom: 80px;
 }
 
 
-@media screen and (max-width: 1024px){
-  .parallax {   
-    height: 100vh;
-    background-size: 1024px ;
-    background-position: top center;
-    
-  }
-
-  #testt{
-    margin-top: -500px;
-  }
-}
-
-
 
 /* NOVO */
 
@@ -511,7 +496,12 @@ height: 300px;
 width: 400px;
 border-radius: 8px 24px;
 margin: 3%;
+border: 0px solid;
+transition: border 0.8s;
+border: 1px solid #CAA985;
 }
+
+
 
 .proc-box-wrapper{
 margin: 1%;
@@ -680,13 +670,15 @@ background-color: rgba(255, 255, 255, 0.8);
 display: flex;
 flex-direction: column;
 align-items: start;
-justify-content: space-evenly;
+justify-content: center;
 
 }
+
+
 .escritorios-box{
 width: 360px;
 height: 250px;
-margin: 0 2%;
+margin: 0 6%;
 padding: 2% 2% 4%;
 display: flex;
 flex-direction: column;
@@ -719,6 +711,7 @@ margin: 0 0 10px;
 
 .redesSociais-wrapper .fa-facebook-f, .redesSociais-wrapper a .fa-whatsapp, .redesSociais-wrapper .fa-instagram{
   font-size: 20px!important;
+  color: #877259;
   text-align: center;
   justify-self: center;
   width: 32px;
@@ -728,8 +721,13 @@ margin: 0 0 10px;
   padding: 5px;
   cursor: pointer;
   margin: 0 20px 0 0 !important;
+  transition: color 0.4s, transform 0.4s;
 }
 
+.redesSociais-wrapper .fa-facebook-f:hover, .redesSociais-wrapper a .fa-whatsapp:hover, .redesSociais-wrapper .fa-instagram:hover{
+  color: #CAA985;
+  transform: scale(1.1);
+}
 
 
 .escritorios-box h4{
@@ -767,15 +765,15 @@ margin: 0 0 20px 0;
 .localBoxes-wrapper{
 display: flex;
 width: 100%;
-height: fit-content;
+height: 70%;
 align-items: center;
-justify-content: space-evenly;
+justify-content: space-between;
 }
 
 .local-box h1{
 font-family: "Playfair Display", serif;  
 color: white;
-margin-left: 6%;
+margin: 0 6%;
 text-shadow: 0px 5px 8px rgba(0, 0, 0, 1);
 }
 
@@ -922,4 +920,8 @@ text-shadow: 0px 5px 8px rgba(0, 0, 0, 1);
   font-family: "Montserrat", sans-serif;
   color: #666;
   font-size: 16px;
+}
+
+@media screen and (max-width: 1024px){
+  
 }
