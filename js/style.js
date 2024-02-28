@@ -1,6 +1,9 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
+    // MODAIS DOS PROCEDIMENTOS    // MODAIS DOS PROCEDIMENTOS
+    // MODAIS DOS PROCEDIMENTOS    // MODAIS DOS PROCEDIMENTOS
+
     modalContent = document.querySelector('.modal-content');
     // hof
     procHof = document.getElementById('proc-hof');
@@ -54,5 +57,26 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    // MODAIS DOS PROCEDIMENTOS    // MODAIS DOS PROCEDIMENTOS
+    // MODAIS DOS PROCEDIMENTOS    // MODAIS DOS PROCEDIMENTOS
 
+
+    // MENU HAMBURGUER     // MENU HAMBURGUER     // MENU HAMBURGUER 
+    // MENU HAMBURGUER     // MENU HAMBURGUER     // MENU HAMBURGUER 
+
+
+    menuHamburguer = document.getElementById('menu-hamburguer');
+    hambModal = document.getElementById('hamb-modal');
+
+
+    menuHamburguer.addEventListener('click', function () {
+        if (hambModal.style.display === "flex") {
+            hambModal.style.display = "none";
+        } else {
+            hambModal.style.display = "flex";
+        }
+    });
+
+    // MENU HAMBURGUER     // MENU HAMBURGUER     // MENU HAMBURGUER 
+    // MENU HAMBURGUER     // MENU HAMBURGUER     // MENU HAMBURGUER 
 });
