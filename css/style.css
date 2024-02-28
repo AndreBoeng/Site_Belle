@@ -120,6 +120,13 @@ body {
   justify-content: space-between;
 }
 
+.bio-box{
+  width: 100%;
+  min-height: 700px;
+  height: fit-content;
+  margin: 20px ;
+}
+
 .itens-navbar{
   display: flex;
 }
@@ -973,7 +980,7 @@ text-shadow: 0px 5px 8px rgba(0, 0, 0, 1);
 
 
 
-@media screen and (max-width: 1250px){
+@media screen and (max-width: 1280px){
   .title-img-main h1{
     font-size: 55px;
     margin-top: 60px;
@@ -994,7 +1001,7 @@ text-shadow: 0px 5px 8px rgba(0, 0, 0, 1);
   }
   .img-container{
     background-position: center 90px; 
-    height: 600px;
+    height: 500px;
   }  
   .cb{   
     font-size: 14px;
@@ -1027,7 +1034,7 @@ text-shadow: 0px 5px 8px rgba(0, 0, 0, 1);
   }
   .img-container{
     background-position: center 80px; 
-    height: 500px;
+    height: 400px;
   }
   .cb{   
     font-size: 12px;
@@ -1045,8 +1052,19 @@ text-shadow: 0px 5px 8px rgba(0, 0, 0, 1);
   }
   .foto-belle{
   width: 40%;
-  height: 500px;
+  height: 400px;
   }
+  .bio-box{
+    min-height: 500px;
+    height: fit-content;
+  }
+  .sobre-wrapper{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    padding: 5% 10% 0 6%;
+  }
+  
 }
 
 
@@ -1066,6 +1084,10 @@ text-shadow: 0px 5px 8px rgba(0, 0, 0, 1);
   .foto-belle{
     width: 40%;
     height: 500px;
+  }
+  .img-container{
+    background-position: center 48px; 
+    height: 350px;
   }
 
 }
@@ -1093,14 +1115,10 @@ text-shadow: 0px 5px 8px rgba(0, 0, 0, 1);
   .itens-navbar{
     display: none;
   }
-  .img-container{
-    background-position: center 67px; 
-    height: 550px;
-  }
   .logo{
-    width: 120px;
-    height: 60px;
-    margin-left: 80px;
+    width: 100px;
+    height: 40px;
+    margin-left: 50px;
   }
   .itens-navbar-hamb{
     display: flex;
@@ -1120,11 +1138,16 @@ text-shadow: 0px 5px 8px rgba(0, 0, 0, 1);
     width: 40%;
     height: 440px;
   }
+  .bio-box{
+    min-height: 400px;
+    height: fit-content;
+  }
+
 
 }
 
 
-@media screen and (max-width: 615px){
+@media screen and (max-width: 640px){
   .bio-belle h3{
     font-size: 20px;
   }
@@ -1138,11 +1161,19 @@ text-shadow: 0px 5px 8px rgba(0, 0, 0, 1);
   }
   .foto-belle{
     width: 40%;
-    height: 340px;
+    height: 260px;
+  }
+  .bio-box{
+    min-height: 340px;
+    height: fit-content;
+  }
+  .img-container{
+    background-position: center 45px; 
+    height: 300px;
   }
 }
 
-@media screen and (max-width: 512px){
+@media screen and (max-width: 550px){
   .title-img-main h1{
     font-size: 28px;
   }
@@ -1176,30 +1207,68 @@ text-shadow: 0px 5px 8px rgba(0, 0, 0, 1);
     width: 40%;
     height: 300px;
   }
+  .bio-box{
+    min-height: 360px;
+    height: fit-content;
+  }
 
 }
 
-
-@media screen and (max-width: 384px){
-  .title-img-main h1{
-    font-size: 28px;
+@media screen and (max-width: 480px){
+  .itens-navbar-hamb i{
+    font-size: 10px;
+  }
+  .logo{
+    width: 80px;
+    height: 30px;
     margin-left: 40px;
   }
+
+  .title-img-main h1{
+    font-size: 25px;
+    margin-left: 80px;
+  }
   .title-img-main h3{
-    font-size: 13px;
-    margin-left: 115px;
+    font-size: 12px;
+    margin-left: 92px;
     margin-bottom: 8px;
   }
   .title-img-main h4{
-    font-size: 11px;
-    margin-left: 138px;    
+    font-size: 10px;
+    margin-left: 113px;    
   }
   .title-img-main h5{
-    font-size: 6px;
-    margin-top: 3px;
-    margin-left: 135px;  
+    font-size: 5px;
+    margin-top: 1px;
+    margin-left: 112px;  
+  }
+  .bio-belle h3{
+    font-size: 16px;
+  }
+  .bio-belle h5{
+    font-size: 8px;
+  }
+  .bio-belle p{
+    padding-right: 60px;
+    font-size: 7px;
+    line-height: 13px;
+  }
+  .foto-belle{
+    width: 40%;
+    height: 200px;
+  }
+  .bio-box{
+    min-height: 260px;
+    height: fit-content;
+  }
+  .img-container{
+    background-position: center 37px; 
+    height: 250px;
   }
 
+}
+
+@media screen and (max-width: 385px){
   .bio-belle h3{
     font-size: 13px;
   }
@@ -1213,6 +1282,10 @@ text-shadow: 0px 5px 8px rgba(0, 0, 0, 1);
   }
   .foto-belle{
     width: 40%;
-    height: 260px;
+    height: 200px;
+  }
+  .bio-box{
+    min-height: 170px;
+    height: fit-content;
   }
 }
