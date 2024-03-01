@@ -79,4 +79,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // MENU HAMBURGUER     // MENU HAMBURGUER     // MENU HAMBURGUER 
     // MENU HAMBURGUER     // MENU HAMBURGUER     // MENU HAMBURGUER 
+
+    
 });
+
+window.addEventListener('resize', function() {
+    var width = window.innerWidth;
+    var footer = document.getElementById('footer');
+    var footerCol = document.getElementById('footer-col');
+
+    if (width <= 880) {
+        footer.style.display = 'none';
+        footerCol.style.display = 'flex';
+    } else {
+        footer.style.display = 'flex';
+        footerCol.style.display = 'none';
+    }
+});
+
+// Execute imediatamente a função para aplicar o estilo correto no carregamento da página
+window.dispatchEvent(new Event('resize'));
